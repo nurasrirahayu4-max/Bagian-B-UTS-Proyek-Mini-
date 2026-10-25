@@ -1,0 +1,178 @@
+
+:root {
+    --p1: #5b3df5;
+    --p2: #ff6ec7;
+    --bg: #f4f2ff;
+}
+
+/* Pengaturan dasar halaman */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: #25223d;
+}
+
+/* Jarak saat berpindah ke bagian halaman */
+section {
+    scroll-margin-top: 16px;
+}
+
+/* Bagian hero atau header utama */
+.hero {
+    background: linear-gradient(130deg, var(--p1), var(--p2));
+    color: #fff;
+    padding-bottom: 56px;
+    border-radius: 0 0 36px 36px;
+}
+
+.hero-body {
+    padding: 48px 12px 8px;
+}
+
+/* Kartu statistik */
+.stat {
+    border: 0;
+    border-radius: 18px;
+    color: #fff;
+    box-shadow: 0 8px 20px #0002;
+    transition: transform 0.2s;
+}
+
+.stat:hover {
+    transform: translateY(-4px);
+}
+
+.stat .angka {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Warna masing-masing kartu statistik */
+.s1 {
+    background: linear-gradient(135deg, #5b3df5, #8b6cff);
+}
+
+.s2 {
+    background: linear-gradient(135deg, #0ea5a4, #34d399);
+}
+
+.s3 {
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+.s4 {
+    background: linear-gradient(135deg, #ec4899, #f472b6);
+}
+
+/* Panel konten */
+.panel {
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px #5b3df522;
+}
+
+/* Efek fokus pada input dan pilihan */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--p1);
+    box-shadow: 0 0 0 0.2rem #5b3df533;
+}
+
+/* Tombol utama */
+.btn-primary {
+    background: var(--p1);
+    border-color: var(--p1);
+}
+
+.btn-primary:hover {
+    background: #4a2fd6;
+    border-color: #4a2fd6;
+}
+
+/* Tombol outline */
+.btn-outline-primary {
+    color: var(--p1);
+    border-color: var(--p1);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary.active {
+    background: var(--p1);
+    border-color: var(--p1);
+    color: #fff;
+}
+
+/* Tampilan nilai huruf */
+.grade {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Warna berdasarkan nilai */
+.gA {
+    background: #10b981;
+}
+
+.gB {
+    background: #3b82f6;
+}
+
+.gC {
+    background: #f59e0b;
+}
+
+.gD {
+    background: #f97316;
+}
+
+.gE {
+    background: #ef4444;
+}
+
+/* Bar indikator nilai */
+.bar {
+    height: 6px;
+    border-radius: 4px;
+    background: #e5e7eb;
+    margin-top: 4px;
+    min-width: 60px;
+}
+
+.bar i {
+    display: block;
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--p1), var(--p2));
+}
+
+/* Animasi baris tabel */
+tbody tr {
+    animation: muncul 0.3s ease;
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Footer */
+footer {
+    color: #6b6890;
+}
